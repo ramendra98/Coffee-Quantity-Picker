@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/coffeno"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="40dp"
+            android:id="@+id/add"
+            android:text="+"
+            android:onClick="increment"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="40dp"
+            android:id="@+id/dcrease"
+            android:text="-"
+            android:onClick="decrement"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prices"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="20sp"
+        android:id="@+id/prices"
+        android:layout_marginLeft="20dp"
+
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:layout_width="120dp"
+        android:id="@+id/oradre"
+        android:text="Orader"
+        android:onClick="orader"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
